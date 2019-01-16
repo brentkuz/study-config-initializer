@@ -1,7 +1,0 @@
-Windows Registry Editor Version 5.00
-
-[HKEY_CLASSES_ROOT\Directory\shell\Initialize Study Config]
-@="Initialize Study Config"
-
-[HKEY_CLASSES_ROOT\Directory\shell\Initialize Study Config\command]
-@="\"C:\\dev\\StudyConfigInitializer\\run.bat\" \"%1\""

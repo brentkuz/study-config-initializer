@@ -3,6 +3,7 @@
 #incoming target directory
 $studyDir = $args[0]
 
+Write-Host "Target: $studyDir"
 
 function Validate-Path(
     [string]$path,

@@ -1,0 +1,2 @@
+@Reg Add "HKCU\Software\Classes\Directory\shell\InitializeStudyConfig" /VE /D "Initialize &Study &Config" /F >Nul
+@Reg Add "HKCU\Software\Classes\Directory\shell\InitializeStudyConfig\command" /VE /D "\"%CD%\run.bat\" \"%%L\"" /F >Nul

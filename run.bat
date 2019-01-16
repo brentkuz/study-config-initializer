@@ -1,1 +1,3 @@
-powershell.exe C:\dev\StudyConfigInitializer\Initialize-Config.ps1 "%1"
+
+
+powershell.exe  %~dp0\Initialize-Config.ps1 "%1"
