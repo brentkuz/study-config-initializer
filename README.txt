@@ -1,11 +1,5 @@
 Study Config Initializer
 
-ASSUMPTIONS
-----------------------------------------------------------------------------------------------------
-1. Your development directory is at: C:\dev
-If this is not the case, you will need to edit the paths in the following files:
-- setup.reg
-
 
 SETUP
 ----------------------------------------------------------------------------------------------------
