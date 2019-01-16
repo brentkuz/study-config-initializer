@@ -48,10 +48,13 @@ $settyPath = "$studyDir\.setty"
 
 #template keyword replacement map
 $replaceMap = @{
-"{Protocol}" = $protocol;
-"{Client}" = $client;
-"{ClientId}" = $clientId
+"Protocol" = $protocol;
+"Client" = $client;
+"ClientId" = $clientId
 }
+$templateVarOpen = "{"
+$templateVarClose = "}"
+
 
 
 #App.config
@@ -70,7 +73,7 @@ if ((Test-Path $userSettingsDir) -eq $false)
 
         foreach($e in $replaceMap.GetEnumerator())
         {
-            $configFile = $configFile -replace $e.Name, $e.Value
+            $configFile = $configFile -replace ($templateVarOpen + $e.Name + $templateVarClose), $e.Value
         }
 
         Set-Content -Path $appConfigPath -Value $configFile
@@ -84,4 +87,5 @@ if((Test-Path $settyPath) -eq $false)
     Set-Content -Path $settyPath -Value "settings\$username"
 }
 
+Write-Host ""
 Read-Host "Complete. Press any key to exit"
