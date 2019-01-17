@@ -1,14 +1,16 @@
 {
-"appConfigName": "App.config",
-"settyName": ".setty",
-"emailPickupDirectoryPath": "EmailPickupDirectoryPath",
+	"appConfigName": "App.config",
+	"settyName": ".setty",
+	"emailPickupDirectoryPath": "EmailPickupDirectoryPath",
 
-"templates":{
-	"varOpen" : "{",
-	"varClose": "}"
-},
+	"templates":{
+		"varOpen" : "{",
+		"varClose": "}"
+	},
 
-"appSettingsXPath": "//configuration/appSettings/add",
-"settingsSubDir": "\\settings\\",
-"templatesSubDir": "\\templates\\"
+	"appSettingsXPath": "//configuration/appSettings/add",
+	"settingsSubDir": "\\settings\\",
+	"templatesSubDir": "\\templates\\",
+	"tmTemplatesSubDir": "\\templates\\tm\\",
+	"irtTemplatesSubDir": "\\templates\\irt\\"
 }
