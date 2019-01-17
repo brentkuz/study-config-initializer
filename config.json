@@ -1,0 +1,14 @@
+{
+"appConfigName": "App.config",
+"settyName": ".setty",
+"emailPickupDirectoryPath": "EmailPickupDirectoryPath",
+
+"templates":{
+	"varOpen" : "{",
+	"varClose": "}"
+},
+
+"appSettingsXPath": "//configuration/appSettings/add",
+"settingsSubDir": "\\settings\\",
+"templatesSubDir": "\\templates\\"
+}
