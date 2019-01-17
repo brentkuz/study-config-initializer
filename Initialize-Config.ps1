@@ -108,7 +108,13 @@ if((Test-Path $studyEmailDumpDir) -eq $false) {
 #.setty
 if((Test-Path $settyPath) -eq $false) {
     New-Item -Path $settyPath -ItemType file
-    Set-Content -Path $settyPath -Value ($config.settingsSubDir +"$username")
+    $settingsSubDir = $config.settingsSubDir
+    #.setty has issues with a leading '\'. Remove if exists.
+    if($settingsSubDir[0] -eq "\") {
+        $settingsSubDir = $settingsSubDir.Substring(1)
+    }
+
+    Set-Content -Path $settyPath -Value ($settingsSubDir + $username)
 }
 
 Write-Host ""
